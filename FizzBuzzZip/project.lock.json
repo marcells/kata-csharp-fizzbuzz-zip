@@ -1,0 +1,39 @@
+{
+  "locked": false,
+  "version": -9998,
+  "projectFileDependencyGroups": {
+    "": [],
+    "DNX,Version=v4.5.1": [
+      "System.Console >= 4.0.0-beta-*"
+    ]
+  },
+  "libraries": {
+    "System.Console/4.0.0-beta-23015": {
+      "serviceable": false,
+      "sha": "9ZEVmN1ODk6YRekA7bvyHLF1Q28ovpTkWBkCiFEwpHO5UzteLr9NQTQ55g2Q8EAunaXKjaCrtA0bidiVbUE0bA==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [
+            "mscorlib"
+          ],
+          "runtimeAssemblies": [
+            "lib/net46/System.Console.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net46/System.Console.dll"
+          ]
+        }
+      },
+      "files": [
+        "System.Console.4.0.0-beta-23015.nupkg",
+        "System.Console.4.0.0-beta-23015.nupkg.sha512",
+        "System.Console.nuspec",
+        "lib/DNXCore50/System.Console.dll",
+        "lib/net46/System.Console.dll",
+        "ref/dotnet/System.Console.dll",
+        "ref/net46/System.Console.dll"
+      ]
+    }
+  }
+}
