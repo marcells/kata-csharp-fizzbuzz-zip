@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+// Idea from: http://cutting.io/posts/completely-overengineering-fizzbuzz-with-infinite-streams/
+
 namespace FizzBuzzZip
 {
     public class Program
@@ -13,15 +15,15 @@ namespace FizzBuzzZip
             var numbers = Numbers().Select(n => n.ToString());
             var fizzsAndBuzzs = fizzs.Zip(buzzs, (x, y) => x + y);
             var fizzsAndBuzzsWithNumbers = fizzsAndBuzzs.Zip(numbers, (x, y) => string.IsNullOrEmpty(x) ? y : x);
-            
+
             foreach (var fizzBuzz in fizzsAndBuzzsWithNumbers.Take(100))
             {
                 Console.Write($"{fizzBuzz}, ");
             }
-            
+
             Console.ReadLine();
         }
-        
+
         public static IEnumerable<int> Numbers()
         {
             for (int i = 1; ; i++)
@@ -29,7 +31,7 @@ namespace FizzBuzzZip
                 yield return i;
             }
         }
-        
+
         public static IEnumerable<T> RepeatEndless<T>(params T[] values)
         {
             for (;;)
